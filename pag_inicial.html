@@ -18,14 +18,14 @@
      }
      </script>
 	 
-  <body>
-		<div>
+  <body bgcolor="#0D0D0D"> 
+		<div align="right">
 			 <a href="pag_inicial_english.html"><button> English Version </button></a>
 			 <a href="pag_cotacao_dolar.html"><button> Clique aqui para a cotação do dólar </button></a>
 		</div>
   
 	 <table border="2" width="50%" align="center">
-	 <h2 align="center"> Tabela de produtos </h2>
+	 <h2 align="center"> <font color="white"> Tabela de produtos </h2>
  	 <tr bgcolor="pink">
 	     <td width="30%" align="center"> Código </td>
 		 <td width="30%" align="center"> Produto </td>
@@ -53,33 +53,33 @@
 	 </table>
 	 <br><br>
 	 
-	 <h2 align="center"> Compra </h2> 
+	 <h2 align="center"> <font color="white"> Compra </h2> 
 	 <form align="center">
 	 
-     Código do Produto: 
+    <font color="white"> Código do Produto: 
 	 <select selected name="codigo">
      <option selected value="100"> 100
      <option value="101"> 101
      <option value="102"> 102
      </select> <br>
 
-	 Valor unitário: <input type="text" name="txtValorUnit" size="25"
+	<font color="white"> Valor unitário: <input type="text" name="txtValorUnit" size="25"
      placeholder="Digite o valor unitário"><br>
 	 
-	 Quantidade: <input type = "text" name = "txtQuant" size="25" 
+	<font color="white"> Quantidade: <input type = "text" name = "txtQuant" size="25" 
 	 placeholder="Digite a quantidade desejada"><br>	 
 	 
      <input type="button" value= "Calcular" onClick="calcular(this.form)"><br><br>
 	 
-     Total: <input type ="text" name="txtTotal" size="5"
+    <font color="white"> Total: <input type ="text" name="txtTotal" size="5"
 	 placeholder="Valor total"> 
 
-     <h3> Forma de pagamento: </h3>
+     <h3> <font color="white"> Forma de pagamento: </h3>
 	 <input type="radio" name="rdbSexo" value="Mas"> Boleto <br>
 	 <input type="radio" name="rdbSexo" value="Mas"> Cartão de débito <br>
 	 <input type="radio" name="rdbSexo" value="Fem"> Cartão de crédito  <br>  
 
-     Parcelas:
+    <font color="white"> Parcelas:
 	 <select selected name="Parcelas">
      <option selected value="1"> 1x
      <option value="2"> 2x
@@ -88,7 +88,7 @@
 	 <input type="button" value= "Parcelar" onClick="parcelar(this.form)">	
 	 <input type="reset" value="Limpar"><br><br>
 	 
-	 Total Parcelado: <input type ="text" name="txtTotalParcelado" size="10"
+	<font color="white"> Total Parcelado: <input type ="text" name="txtTotalParcelado" size="10"
 	 placeholder="Valor parcelado">	
      </form>	 
   </body>
