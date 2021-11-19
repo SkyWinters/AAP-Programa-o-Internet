@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+	 <title> PÁGINA DE COMPRAS </title>
+  </head>
+     <script language="JavaScript">
+     function calcular(form) {
+   
+     var calcular = eval(form.txtQuant.value) * eval(form.txtValorUnit.value);
+     form.txtTotal.value = calcular;
+     } 	 
+	 
+	 function parcelar(form) {
+	 
+	 parcelar = eval(form.txtTotal.value)/ eval(form.Parcelas.value);
+     form.txtTotalParcelado.value = parcelar;
+     }
+     </script>
+	 
+  <body>
+		<div>
+			 <a href="pag_inicial_english.html"><button> English Version </button></a>
+			 <a href="pag_cotacao_dolar.html"><button> Clique aqui para a cotação do dólar </button></a>
+		</div>
+  
+	 <table border="2" width="50%" align="center">
+	 <h2 align="center"> Tabela de produtos </h2>
+ 	 <tr bgcolor="pink">
+	     <td width="30%" align="center"> Código </td>
+		 <td width="30%" align="center"> Produto </td>
+		 <td width="30%" align="center"> Marca </td>
+		 <td width="30%" align="center"> Valor </td>
+	 </tr> 
+	 <tr bgcolor="white">
+	     <td align="center"> 100 </td>
+         <td align="center" > Notebook </td>
+         <td align="center"> TECH IN </td>
+         <td align="center"> $ 1.000,00 </td>	
+	 </tr>
+     <tr bgcolor="white">
+	     <td align="center"> 101 </td>
+         <td align="center"> Notebook </td>
+         <td align="center"> Innovation </td>
+         <td align="center"> $ 1.500,00 </td>
+     </tr>
+     <tr bgcolor="white">
+	     <td align="center"> 102 </td>
+         <td align="center"> Notebook </td>
+         <td align="center"> TINN </td>
+         <td align="center"> $ 2.500,00 </td>
+     </tr>
+	 </table>
+	 <br><br>
+	 
+	 <h2 align="center"> Compra </h2> 
+	 <form align="center">
+	 
+     Código do Produto: 
+	 <select selected name="codigo">
+     <option selected value="100"> 100
+     <option value="101"> 101
+     <option value="102"> 102
+     </select> <br>
+
+	 Valor unitário: <input type="text" name="txtValorUnit" size="25"
+     placeholder="Digite o valor unitário"><br>
+	 
+	 Quantidade: <input type = "text" name = "txtQuant" size="25" 
+	 placeholder="Digite a quantidade desejada"><br>	 
+	 
+     <input type="button" value= "Calcular" onClick="calcular(this.form)"><br><br>
+	 
+     Total: <input type ="text" name="txtTotal" size="5"
+	 placeholder="Valor total"> 
+
+     <h3> Forma de pagamento: </h3>
+	 <input type="radio" name="rdbSexo" value="Mas"> Boleto <br>
+	 <input type="radio" name="rdbSexo" value="Mas"> Cartão de débito <br>
+	 <input type="radio" name="rdbSexo" value="Fem"> Cartão de crédito  <br>  
+
+     Parcelas:
+	 <select selected name="Parcelas">
+     <option selected value="1"> 1x
+     <option value="2"> 2x
+     <option value="3"> 3x
+	 </select> <br> <br>
+	 <input type="button" value= "Parcelar" onClick="parcelar(this.form)">	
+	 <input type="reset" value="Limpar"><br><br>
+	 
+	 Total Parcelado: <input type ="text" name="txtTotalParcelado" size="10"
+	 placeholder="Valor parcelado">	
+     </form>	 
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Cadastre-se</title>
+	</head>
+	
+	<body>
+		<h1>Cadastre-se</h1>
+		<form method="post"> <!--POST não aparece as infos no form na URL \ GET q é o padrão, mostra-->
+			Nome: <input type="text" name="txtNome" id="txtNome"
+					value="Digite seu nome" size="10">
+					
+		<br> <br>
+		Idade:
+		<select name="Idade">
+			<option selected value="0-18"> 0 - 18
+			<option value="19-25"> 19 - 25
+			<option value="26-35"> 26 - 35
+			<option value="36mais"> 36 ou Mais
+		</select>
+		
+		<br> <br>
+		Sexo: <br>
+			<input type="radio" name="sexo" value="masc"> Masculino <br>
+			<input type="radio" name="sexo" value="fem">  Feminino <br>
+		<br> 
+		
+		País:
+		<select name = "pais">
+			<option value="Brasil">Brasil</option>
+			<option value="Canada">Canada</option>
+			<option value="Estados_Unidos">Estados Unidos</option>
+			<option value="México">México</option>
+			<option value="Groelândia">Groelândia</option>
+			<option value="Índia">Índia</option>
+			<option value="Rússia">Rússia</option>
+			<option value="Alemanha">Alemanha</option>
+			<option value="Portugal">Portugal</option>
+			<option value="Outro">Outro</option>
+		</select>
+		
+		<br> <br>
+		
+		Cidade:
+		<select name="Cidade">
+			<option selected value="Ita"> Itaquaquecetuba
+			<option value="Sz"> Suzano
+			<option value="Po"> Poá
+		</select>
+		<br> <br>
+		
+		Estado:
+		<select name = "estado">
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="AC">Acre</option>
+			<option value="AL">Alagoas</option>
+			<option value="AP">Amapá</option>
+			<option value="AM">Amazonas</option>
+			<option value="BA">Bahia</option>
+			<option value="CE">Ceará</option>
+			<option value="ES">Espírito Santo</option>
+			<option value="SP">São Paulo</option>
+			<option value="Outro">Outro</option>
+		</select>
+		
+		<br> <br>
+		<!--Radio-->
+			Curso: <br>
+			<input type="radio" name="rdbCurso" value="Sec"> Secretariado <br>
+			<input type="radio" name="rdbCurso" value="GTI"> Gestão da Tecnologia da Informação <br>
+			<input type="radio" name="rdbCurso" value="GCOM"> Gestão Comercial <br>
+			
+			<br>
+			
+			Estado Civil: <br>
+			<input type="radio" name="estcivil" value="solt"> Solteiro(a) <br>
+			<input type="radio" name="estcivil" value="casad"> Casado(a) <br>
+			<input type="radio" name="estcivil" value="divorc"> Divorciado(a) <br>
+			<input type="radio" name="estcivil" value="viuvo"> Viúvo(a) <br>
+			<input type="radio" name="estcivil" value="separad"> Separado(a) <br>
+				
+			Preferências: <br> 
+			<input type="checkbox" name="chkPref" value="1"> Esportes <br>
+			<input type="checkbox" name="chkPref" value="2"> Literatura <br>
+			<input type="checkbox" name="chkPref" value="3"> Filmes <br>
+			<input type="checkbox" name="chkPref" value="4"> Games <br>
+			<br>
+			
+			E-mail: <input type="text" name="txtEmail" id="txtEmail"
+					value="" size="80" maxlength="80">	
+			<br>
+			
+			<br>
+			Senha: <input type="password" name="txtSenha" size="10" maxlength="10">
+			<br> <br>
+			
+			Observação: <br>
+			<textarea name="txtObs" rows="5" cols="30"></textarea>
+			<br>
+			<input type="hidden" name ="cmpOculto" value="txtCodigo">
+			<input type="reset" name ="btnLimpar" value="Limpar">
+			<input type="submit" name="btnEnviar" value="Enviar">
+		</form>
+	</body> 
+</html>
